@@ -49,30 +49,25 @@ header{
          margin-left:auto; font-style:italic; }
 
 /* MAIN */
-main{ flex:1; display:flex; overflow:hidden; }
-.grid{ display:flex; width:100%; height:100%; }
+main{ flex:1; overflow-y:auto; }
+.grid{ width:100%; max-width:860px; margin:0 auto; padding:28px 24px 32px; }
 
-.illus{
-  width:42%; flex-shrink:0;
-  display:flex; align-items:center; justify-content:center;
-  background:var(--bg); border-right:1px solid var(--border); padding:20px; overflow:hidden;
+.chap-img{
+  width:100%; aspect-ratio:2/1; object-fit:cover; display:block;
+  border-radius:4px; margin-bottom:24px; background:var(--bg2);
 }
-.illus svg{ max-width:100%; max-height:100%; width:auto; height:auto; }
 
-.chap{
-  flex:1; display:flex; flex-direction:column; overflow:hidden; padding:24px 32px 20px;
-}
+.chap{ padding-bottom:8px; }
 .chap-head{ flex-shrink:0; margin-bottom:14px; padding-bottom:12px; border-bottom:1px solid var(--border); }
 .chap-n{ font-size:.7rem; text-transform:uppercase; letter-spacing:.18em; color:var(--pisd);
            font-family:system-ui,sans-serif; margin-bottom:5px; }
 .chap-title{ font-family:'Cormorant Garamond',serif; font-size:1.65rem; font-weight:400; line-height:1.2; margin-bottom:5px; }
 .chap-topic{ font-size:.78rem; color:var(--lav); font-family:system-ui,sans-serif; font-style:italic; }
 .chap-text{
-  flex:1; overflow-y:auto; font-size:1.01rem; line-height:1.8; color:var(--ink); padding-right:10px;
+  font-size:1.01rem; line-height:1.8; color:var(--ink);
 }
 .chap-text p{ margin-bottom:1.15em; }
-.chap-text::-webkit-scrollbar{ width:4px; }
-.chap-text::-webkit-scrollbar-thumb{ background:var(--pisl); border-radius:2px; }
+
 
 /* SOURCE */
 .srcbar{
@@ -183,21 +178,7 @@ She closed it before she could think too much about it.
 
 "I don't know yet," she said.
 
-Outside the wide windows, the evening had settled into a deep persimmon orange. Somewhere in the city ahead of them, something was already beginning. They didn't know it yet — but it had known them for a long time.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <path d="M110 420 Q110 160 200 110 Q290 160 290 420"
-        fill="none" stroke="#2c2c3a" stroke-width="3" stroke-linecap="round"/>
-  <line x1="90" y1="420" x2="110" y2="420" stroke="#2c2c3a" stroke-width="3"/>
-  <line x1="290" y1="420" x2="310" y2="420" stroke="#2c2c3a" stroke-width="3"/>
-  <line x1="90" y1="420" x2="90" y2="440" stroke="#2c2c3a" stroke-width="3"/>
-  <line x1="310" y1="420" x2="310" y2="440" stroke="#2c2c3a" stroke-width="3"/>
-  <line x1="80" y1="440" x2="320" y2="440" stroke="#2c2c3a" stroke-width="3"/>
-  <circle cx="200" cy="280" r="55" fill="none" stroke="#8BB870" stroke-width="1.2" stroke-dasharray="3 9" opacity="0.7"/>
-  <circle cx="200" cy="280" r="36" fill="none" stroke="#8BB870" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.55"/>
-  <circle cx="200" cy="280" r="20" fill="none" stroke="#8BB870" stroke-width="1.2" stroke-dasharray="3 5" opacity="0.4"/>
-  <circle cx="200" cy="280" r="6"  fill="#9b8bb5" opacity="0.6"/>
-  <text x="200" y="475" text-anchor="middle" font-size="11" fill="#9b8bb5" opacity="0.6" font-family="Georgia,serif" letter-spacing="6">·  ·  ·</text>
-</svg>`,
+Outside the wide windows, the evening had settled into a deep persimmon orange. Somewhere in the city ahead of them, something was already beginning. They didn't know it yet — but it had known them for a long time.`
   },
   {
     n: 2,
@@ -225,22 +206,7 @@ He stopped at one photo. He hadn't meant to take it — a blur, camera moving at
 
 He stared at it for two stops.
 
-Then he closed his camera and looked out the window at the lit-up city sliding past.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#1a1220"/>
-  <line x1="200" y1="60" x2="200" y2="120" stroke="#2c2c3a" stroke-width="2"/>
-  <ellipse cx="200" cy="130" rx="30" ry="12" fill="#c0392b" opacity="0.9"/>
-  <rect x="170" y="130" width="60" height="120" rx="8" fill="#c0392b" opacity="0.85"/>
-  <ellipse cx="200" cy="250" rx="30" ry="12" fill="#c0392b" opacity="0.9"/>
-  <line x1="200" y1="262" x2="200" y2="280" stroke="#2c2c3a" stroke-width="1.5"/>
-  <rect x="140" y="330" width="120" height="8" rx="3" fill="#2c2c3a" opacity="0.6"/>
-  <ellipse cx="167" cy="330" rx="18" ry="7" fill="none" stroke="#2c2c3a" stroke-width="1.5"/>
-  <rect x="152" y="295" width="30" height="35" rx="4" fill="#2c2c3a" opacity="0.12" stroke="#2c2c3a" stroke-width="1.5"/>
-  <ellipse cx="233" cy="330" rx="18" ry="7" fill="none" stroke="#2c2c3a" stroke-width="1.5"/>
-  <rect x="218" y="295" width="30" height="35" rx="4" fill="#2c2c3a" opacity="0.12" stroke="#2c2c3a" stroke-width="1.5"/>
-  <text x="200" y="145" text-anchor="middle" font-size="9" fill="#f5f0e8" font-family="Georgia,serif">居酒屋</text>
-  <circle cx="200" cy="190" r="3" fill="#f5f0e8" opacity="0.6"/>
-  <circle cx="200" cy="210" r="3" fill="#f5f0e8" opacity="0.6"/>
-</svg>`,
+Then he closed his camera and looked out the window at the lit-up city sliding past.`
   },
   {
     n: 3,
@@ -274,23 +240,7 @@ Senna looked at her hands.
 
 "I didn't," she said. "I just drew it."
 
-The priest listened to the translation. His expression did not change. He bowed once, very formally, and walked away.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect x="120" y="60" width="160" height="30" rx="3" fill="#2c2c3a" opacity="0.8"/>
-  <rect x="130" y="55" width="140" height="12" rx="2" fill="#2c2c3a" opacity="0.6"/>
-  <ellipse cx="200" cy="110" rx="45" ry="16" fill="#c0392b"/>
-  <rect x="155" y="110" width="90" height="170" rx="6" fill="#c0392b"/>
-  <ellipse cx="200" cy="280" rx="45" ry="16" fill="#c0392b"/>
-  <line x1="200" y1="296" x2="200" y2="330" stroke="#2c2c3a" stroke-width="2"/>
-  <text x="200" y="210" text-anchor="middle" font-size="13" fill="#f5e6b4"
-        font-family="Georgia,serif" writing-mode="tb" letter-spacing="6">雷門</text>
-  <rect x="80"  y="60" width="30" height="200" rx="2" fill="#2c2c3a" opacity="0.7"/>
-  <rect x="290" y="60" width="30" height="200" rx="2" fill="#2c2c3a" opacity="0.7"/>
-  <rect x="60"  y="55" width="280" height="18" rx="3" fill="#2c2c3a" opacity="0.5"/>
-  <rect x="60"  y="255" width="280" height="18" rx="3" fill="#2c2c3a" opacity="0.5"/>
-  <ellipse cx="200" cy="420" rx="80" ry="12" fill="#2c2c3a" opacity="0.07"/>
-  <text x="200" y="470" text-anchor="middle" font-size="10" fill="#9b8bb5" opacity="0.7" font-family="Georgia,serif" letter-spacing="4">Asakusa</text>
-</svg>`,
+The priest listened to the translation. His expression did not change. He bowed once, very formally, and walked away.`
   },
   {
     n: 4,
@@ -320,26 +270,7 @@ Instead, she drew the space between the roots. The curve where the wood rose fro
 
 She closed the book. Looked at the tree. The tree did not seem to notice.
 
-Behind her, a crow landed on a branch and sat there in perfect silence, watching.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#c8dfc8"/>
-      <stop offset="100%" stop-color="#f5f0e8"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g4)"/>
-  <line x1="80"  y1="0" x2="80"  y2="500" stroke="#5a4a30" stroke-width="28" opacity="0.85"/>
-  <line x1="160" y1="0" x2="160" y2="500" stroke="#5a4a30" stroke-width="22" opacity="0.8"/>
-  <line x1="240" y1="0" x2="240" y2="500" stroke="#5a4a30" stroke-width="26" opacity="0.85"/>
-  <line x1="320" y1="0" x2="320" y2="500" stroke="#5a4a30" stroke-width="20" opacity="0.8"/>
-  <line x1="200" y1="80" x2="200" y2="400" stroke="#c0392b" stroke-width="6" opacity="0.55"/>
-  <rect x="165" y="80"  width="70" height="12" rx="2" fill="#c0392b" opacity="0.55"/>
-  <rect x="165" y="240" width="70" height="12" rx="2" fill="#c0392b" opacity="0.55"/>
-  <line x1="100" y1="120" x2="360" y2="200" stroke="#f5f0e8" stroke-width="14" opacity="0.12"/>
-  <line x1="50"  y1="180" x2="300" y2="320" stroke="#f5f0e8" stroke-width="10" opacity="0.10"/>
-  <line x1="150" y1="60"  x2="400" y2="260" stroke="#f5f0e8" stroke-width="8"  opacity="0.08"/>
-</svg>`,
+Behind her, a crow landed on a branch and sat there in perfect silence, watching.`
   },
   {
     n: 5,
@@ -369,26 +300,7 @@ She was still staring at it when Daien appeared behind her, slightly out of brea
 
 She pointed. He raised his camera. He photographed the bowl from directly above.
 
-Later, walking back to meet Torei and Shizune, neither of them mentioned it. But Daien had the photo open on his screen, and he kept tilting his head, trying to see it from a different angle.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g5" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#7ba3c0"/>
-      <stop offset="100%" stop-color="#4a7a9b"/>
-    </linearGradient>
-  </defs>
-  <ellipse cx="200" cy="290" rx="140" ry="50" fill="#3a5f78" opacity="0.3"/>
-  <path d="M70 250 Q70 380 200 400 Q330 380 330 250 Q330 200 200 190 Q70 200 70 250Z"
-        fill="url(#g5)" stroke="#3a5f78" stroke-width="2"/>
-  <ellipse cx="200" cy="250" rx="130" ry="40" fill="#7ba3c0" opacity="0.6"/>
-  <path d="M200 195 Q180 260 160 310 Q170 350 200 370" fill="none" stroke="#c8a84b" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M200 195 Q225 255 240 290 Q250 330 230 370" fill="none" stroke="#c8a84b" stroke-width="2" stroke-linecap="round"/>
-  <path d="M160 310 Q185 320 200 370" fill="none" stroke="#c8a84b" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M160 310 Q130 295 105 270" fill="none" stroke="#c8a84b" stroke-width="1.8" stroke-linecap="round"/>
-  <path d="M240 290 Q270 280 295 260" fill="none" stroke="#c8a84b" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="200" cy="195" r="5" fill="#c8a84b" opacity="0.9"/>
-  <text x="200" y="460" text-anchor="middle" font-size="10" fill="#c8a84b" opacity="0.7" font-family="Georgia,serif" letter-spacing="4">金継ぎ</text>
-</svg>`,
+Later, walking back to meet Torei and Shizune, neither of them mentioned it. But Daien had the photo open on his screen, and he kept tilting his head, trying to see it from a different angle.`
   },
   {
     n: 6,
@@ -422,25 +334,7 @@ A museum curator happened to be passing. Daien showed her the photograph on his 
 
 The curator looked at it for a long moment. Then she looked at them both, with an expression that was difficult to name.
 
-"There is an object in our storage collection," she said, slowly. "It has been catalogued but never exhibited. The description says it is waiting to be identified by someone who can read it." She paused. "Would you like to make an appointment?"`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#e8d890" opacity="0.6"/>
-  <rect width="400" height="500" fill="#c8a84b" opacity="0.25"/>
-  <line x1="133" y1="0" x2="133" y2="500" stroke="#2c2c3a" stroke-width="2" opacity="0.3"/>
-  <line x1="266" y1="0" x2="266" y2="500" stroke="#2c2c3a" stroke-width="2" opacity="0.3"/>
-  <polygon points="0,500 80,200 160,500"   fill="#2c2c3a" opacity="0.7"/>
-  <polygon points="100,500 200,140 300,500" fill="#2c2c3a" opacity="0.65"/>
-  <polygon points="240,500 330,220 400,500" fill="#2c2c3a" opacity="0.6"/>
-  <path d="M0 350 Q100 320 200 340 Q300 360 400 330" fill="none" stroke="#2c2c3a" stroke-width="1" opacity="0.4"/>
-  <circle cx="50"  cy="300" r="3" fill="#2c2c3a" opacity="0.5"/>
-  <circle cx="90"  cy="280" r="2" fill="#2c2c3a" opacity="0.5"/>
-  <circle cx="110" cy="310" r="3" fill="#2c2c3a" opacity="0.5"/>
-  <circle cx="310" cy="290" r="3" fill="#2c2c3a" opacity="0.5"/>
-  <circle cx="350" cy="270" r="2" fill="#2c2c3a" opacity="0.5"/>
-  <path d="M22 460 Q28 450 34 460 Q40 470 46 460" fill="none" stroke="#2c2c3a" stroke-width="1.2" opacity="0.6"/>
-  <circle cx="34" cy="458" r="4" fill="none" stroke="#2c2c3a" stroke-width="1" opacity="0.5"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#2c2c3a" opacity="0.5" font-family="Georgia,serif" letter-spacing="3">屏風</text>
-</svg>`,
+"There is an object in our storage collection," she said, slowly. "It has been catalogued but never exhibited. The description says it is waiting to be identified by someone who can read it." She paused. "Would you like to make an appointment?"`
   },
   {
     n: 7,
@@ -472,30 +366,7 @@ Senna looked at him. She had known Torei for eight years and had never heard him
 
 Torei shook his head. He kept looking at the water.
 
-Daien took a photograph of the reflection. He didn't show it to anyone, but when he looked at it later, the cloud formations around the summit had arranged themselves into something he wasn't ready to name.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g7sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8ab4c9" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#d4eaf7" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#d4eaf7" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#8ab4c9" stop-opacity="0.3"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g7sky)"/>
-  <line x1="0" y1="250" x2="400" y2="250" stroke="#2c2c3a" stroke-width="1" opacity="0.2"/>
-  <polygon points="200,80 100,250 300,250" fill="#e8e4e0"/>
-  <polygon points="200,80 175,130 225,130" fill="white" opacity="0.9"/>
-  <polygon points="200,250 100,80 300,80" fill="#c8d8e8" opacity="0.35"/>
-  <polygon points="200,250 175,200 225,200" fill="white" opacity="0.35"/>
-  <path d="M0 250 Q100 240 200 250 Q300 260 400 250" fill="#c8dce8" opacity="0.4"/>
-  <path d="M30 170 Q60 155 90 165 Q120 175 150 160 Q170 152 190 155" fill="none" stroke="#2c2c3a" stroke-width="1" opacity="0.18"/>
-  <circle cx="60" cy="155" r="6" fill="#f9d4d4" opacity="0.7"/>
-  <circle cx="75" cy="148" r="5" fill="#f9d4d4" opacity="0.6"/>
-  <circle cx="50" cy="163" r="4" fill="#f9d4d4" opacity="0.5"/>
-  <circle cx="85" cy="158" r="4" fill="#f9d4d4" opacity="0.55"/>
-  <line x1="38" y1="165" x2="38" y2="210" stroke="#5a4a30" stroke-width="3"/>
-</svg>`,
+Daien took a photograph of the reflection. He didn't show it to anyone, but when he looked at it later, the cloud formations around the summit had arranged themselves into something he wasn't ready to name.`
   },
   {
     n: 8,
@@ -527,31 +398,7 @@ He looked at Senna.
 
 She was looking out the window, watching the mountains go past. She had her sketchbook open on her knee, and she wasn't drawing.
 
-He closed the book slowly and didn't say anything yet.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g8" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8ab4c9" stop-opacity="0.5"/>
-      <stop offset="70%" stop-color="#e8f0e8"/>
-      <stop offset="100%" stop-color="#c8d8c0"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g8)"/>
-  <polygon points="0,500 90,300 180,500"  fill="#2c2c3a" opacity="0.5"/>
-  <polygon points="120,500 220,260 320,500" fill="#2c2c3a" opacity="0.45"/>
-  <polygon points="250,500 340,310 400,500" fill="#2c2c3a" opacity="0.4"/>
-  <rect x="0" y="340" width="400" height="10" fill="#2c2c3a" opacity="0.4"/>
-  <rect x="0" y="350" width="400" height="6"  fill="#2c2c3a" opacity="0.2"/>
-  <path d="M-20 290 Q60 270 400 285" fill="none" stroke="white" stroke-width="1" opacity="0.8"/>
-  <rect x="-30" y="275" width="350" height="55" rx="22" fill="white" stroke="#2c2c3a" stroke-width="1.5"/>
-  <path d="M320 275 Q370 278 380 302 Q370 328 320 330" fill="#e8e8f0" stroke="#2c2c3a" stroke-width="1.5"/>
-  <rect x="20"  y="285" width="40" height="28" rx="3" fill="#8ab4c9" opacity="0.5" stroke="#2c2c3a" stroke-width="0.8"/>
-  <rect x="75"  y="285" width="40" height="28" rx="3" fill="#8ab4c9" opacity="0.5" stroke="#2c2c3a" stroke-width="0.8"/>
-  <rect x="130" y="285" width="40" height="28" rx="3" fill="#8ab4c9" opacity="0.5" stroke="#2c2c3a" stroke-width="0.8"/>
-  <rect x="185" y="285" width="40" height="28" rx="3" fill="#8ab4c9" opacity="0.5" stroke="#2c2c3a" stroke-width="0.8"/>
-  <rect x="240" y="285" width="40" height="28" rx="3" fill="#8ab4c9" opacity="0.5" stroke="#2c2c3a" stroke-width="0.8"/>
-  <line x1="0" y1="330" x2="400" y2="330" stroke="#2c2c3a" stroke-width="1.5" opacity="0.6"/>
-</svg>`,
+He closed the book slowly and didn't say anything yet.`
   },
   {
     n: 9,
@@ -583,25 +430,7 @@ She spoke rapidly to her young assistant, who had been standing by the door. The
 
 Senna looked at the sketchbook. Then at Hanako.
 
-The old brewer held her gaze and did not look away.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#2a1f1a"/>
-  <line x1="200" y1="50" x2="200" y2="140" stroke="#8a7a60" stroke-width="2.5"/>
-  <circle cx="200" cy="180" r="42" fill="#8BB870" opacity="0.85"/>
-  <circle cx="200" cy="180" r="42" fill="none" stroke="#5a8a45" stroke-width="2"/>
-  <circle cx="200" cy="180" r="32" fill="#8BB870" opacity="0.5"/>
-  <circle cx="200" cy="180" r="20" fill="#8BB870" opacity="0.4"/>
-  <circle cx="200" cy="140" r="8"  fill="#8a7a60"/>
-  <rect x="110" y="310" width="65" height="90" rx="6" fill="#6a4a30" stroke="#8a6a40" stroke-width="2"/>
-  <rect x="225" y="310" width="65" height="90" rx="6" fill="#6a4a30" stroke="#8a6a40" stroke-width="2"/>
-  <text x="143" y="365" text-anchor="middle" font-size="11" fill="#e8d890" font-family="Georgia,serif" opacity="0.8">酒</text>
-  <text x="258" y="365" text-anchor="middle" font-size="11" fill="#e8d890" font-family="Georgia,serif" opacity="0.8">酒</text>
-  <ellipse cx="143" cy="310" rx="32" ry="8" fill="#7a5a38" stroke="#8a6a40" stroke-width="1.5"/>
-  <ellipse cx="258" cy="310" rx="32" ry="8" fill="#7a5a38" stroke="#8a6a40" stroke-width="1.5"/>
-  <ellipse cx="200" cy="430" rx="22" ry="8" fill="#3a2a20" stroke="#6a5a40" stroke-width="1.5"/>
-  <rect x="184" y="408" width="32" height="22" rx="3" fill="#3a2a20" stroke="#6a5a40" stroke-width="1.5"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#8a7a60" font-family="Georgia,serif" letter-spacing="3">清酒</text>
-</svg>`,
+The old brewer held her gaze and did not look away.`
   },
   {
     n: 10,
@@ -633,29 +462,7 @@ Carved into the beam — not painted, not inked, but cut into the wood with some
 
 Nobody spoke for a moment.
 
-"It's been waiting," Senna said.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g10" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#c8d8e8"/>
-      <stop offset="60%" stop-color="#e8f0f4"/>
-      <stop offset="100%" stop-color="#f0f0f0"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g10)"/>
-  <polygon points="60,500 200,480 340,500" fill="#8a9890" opacity="0.5"/>
-  <polygon points="0,500 130,500 200,480 270,500 400,500 400,480 200,465 0,480" fill="#c0c8c0" opacity="0.4"/>
-  <polygon points="200,100 60,380 340,380" fill="#4a3a28"/>
-  <polygon points="200,100 170,130 230,130" fill="#e8e8e0" opacity="0.6"/>
-  <rect x="80" y="380" width="240" height="80" fill="#6a5a48"/>
-  <rect x="170" y="410" width="60" height="50" fill="#4a3828"/>
-  <rect x="100" y="395" width="45" height="35" rx="2" fill="#3a2a18" opacity="0.7"/>
-  <rect x="255" y="395" width="45" height="35" rx="2" fill="#3a2a18" opacity="0.7"/>
-  <polygon points="200,95 55,382 75,382 200,118 325,382 345,382" fill="white" opacity="0.1"/>
-  <path d="M70 200 Q130 170 200 180 Q270 170 330 200" fill="none" stroke="white" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"/>
-  <ellipse cx="200" cy="498" rx="100" ry="8" fill="white" opacity="0.4"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#4a3828" opacity="0.6" font-family="Georgia,serif" letter-spacing="3">合掌造り</text>
-</svg>`,
+"It's been waiting," Senna said.`
   },
   {
     n: 11,
@@ -691,28 +498,7 @@ The decorative motif on the central panel looked like the symbol. Exactly like i
 
 He found Senna. She looked at the screen. She went and got her sketchbook and held it beside the screen.
 
-They went back to the street the next morning. The mikoshi was gone. The festival moved on. They could find no one who knew whose mikoshi it had been.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#1a0f0a"/>
-  <line x1="100" y1="400" x2="300" y2="400" stroke="#8a6a40" stroke-width="8" stroke-linecap="round"/>
-  <line x1="80"  y1="400" x2="100" y2="400" stroke="#8a6a40" stroke-width="5" opacity="0.6"/>
-  <line x1="300" y1="400" x2="320" y2="400" stroke="#8a6a40" stroke-width="5" opacity="0.6"/>
-  <rect x="120" y="260" width="160" height="140" rx="3" fill="#c0392b" stroke="#c8a84b" stroke-width="2"/>
-  <rect x="130" y="270" width="140" height="120" rx="2" fill="#c0392b" opacity="0.7"/>
-  <rect x="110" y="255" width="180" height="18" rx="3" fill="#c8a84b"/>
-  <rect x="110" y="390" width="180" height="12" rx="2" fill="#c8a84b"/>
-  <rect x="150" y="200" width="100" height="65" rx="3" fill="#c8a84b"/>
-  <polygon points="200,140 150,200 250,200" fill="#c8a84b"/>
-  <circle cx="200" cy="133" r="12" fill="#c8a84b"/>
-  <line x1="175" y1="262" x2="175" y2="398" stroke="#c8a84b" stroke-width="1.2" opacity="0.6"/>
-  <line x1="225" y1="262" x2="225" y2="398" stroke="#c8a84b" stroke-width="1.2" opacity="0.6"/>
-  <text x="200" y="338" text-anchor="middle" font-size="14" fill="#e8d890" font-family="Georgia,serif">神</text>
-  <circle cx="140" cy="450" r="5" fill="#c0392b" opacity="0.6"/>
-  <circle cx="200" cy="460" r="5" fill="#c0392b" opacity="0.6"/>
-  <circle cx="260" cy="450" r="5" fill="#c0392b" opacity="0.6"/>
-  <ellipse cx="60" cy="430" rx="18" ry="40" fill="#c0392b" opacity="0.4" transform="rotate(-20,60,430)"/>
-  <ellipse cx="340" cy="430" rx="18" ry="40" fill="#c0392b" opacity="0.4" transform="rotate(20,340,430)"/>
-</svg>`,
+They went back to the street the next morning. The mikoshi was gone. The festival moved on. They could find no one who knew whose mikoshi it had been.`
   },
   {
     n: 12,
@@ -740,29 +526,7 @@ At the edge of a clearing, where the path crested a low ridge, the trees parted.
 
 A stone path, narrow, covered with moss, led downward into the trees on the other side. It was not on any map they had looked at. There was no sign.
 
-Torei started down it before anyone said anything.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g12" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#b8d4a0"/>
-      <stop offset="100%" stop-color="#2a4a20"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g12)"/>
-  <rect x="55"  y="0" width="28" height="500" fill="#3a2a18" opacity="0.85"/>
-  <rect x="155" y="0" width="22" height="500" fill="#3a2a18" opacity="0.8"/>
-  <rect x="240" y="0" width="26" height="500" fill="#3a2a18" opacity="0.82"/>
-  <rect x="335" y="0" width="20" height="500" fill="#3a2a18" opacity="0.78"/>
-  <polygon points="120,0 100,500 140,500" fill="#d4f0a0" opacity="0.08"/>
-  <polygon points="210,0 190,500 230,500" fill="#d4f0a0" opacity="0.10"/>
-  <polygon points="300,0 280,500 320,500" fill="#d4f0a0" opacity="0.07"/>
-  <ellipse cx="100" cy="460" rx="35" ry="12" fill="#1a3010" opacity="0.6"/>
-  <ellipse cx="200" cy="480" rx="30" ry="10" fill="#1a3010" opacity="0.5"/>
-  <ellipse cx="300" cy="470" rx="28" ry="10" fill="#1a3010" opacity="0.5"/>
-  <path d="M180 420 Q185 405 195 415 Q200 400 210 410 Q215 395 225 408"
-        fill="none" stroke="#8BB870" stroke-width="1.5" opacity="0.7"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#c8e8b0" opacity="0.7" font-family="Georgia,serif" letter-spacing="3">森林浴</text>
-</svg>`,
+Torei started down it before anyone said anything.`
   },
   {
     n: 13,
@@ -800,34 +564,7 @@ He took the photograph again. And again.
 
 Every frame: white.
 
-He looked at Senna. She had her sketchbook out and was drawing the stone as fast as she could, as if she didn't trust the morning to hold still.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g13" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#c8c0d0"/>
-      <stop offset="100%" stop-color="#e8e4ec"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g13)"/>
-  <rect x="155" y="120" width="16" height="320" fill="#c0392b" opacity="0.7"/>
-  <rect x="229" y="120" width="16" height="320" fill="#c0392b" opacity="0.7"/>
-  <rect x="130" y="120" width="140" height="20" rx="3" fill="#c0392b" opacity="0.8"/>
-  <rect x="140" y="108" width="120" height="16" rx="3" fill="#c0392b" opacity="0.6"/>
-  <ellipse cx="200" cy="220" rx="55" ry="45" fill="#e8d4c0" stroke="#2c2c3a" stroke-width="2"/>
-  <ellipse cx="200" cy="210" rx="38" ry="30" fill="#d4b898" opacity="0.6"/>
-  <path d="M155 235 Q175 265 200 270 Q225 265 245 235" fill="#c4a080" opacity="0.7"/>
-  <ellipse cx="180" cy="215" rx="12" ry="10" fill="white" stroke="#2c2c3a" stroke-width="1"/>
-  <ellipse cx="220" cy="215" rx="12" ry="10" fill="white" stroke="#2c2c3a" stroke-width="1"/>
-  <circle cx="180" cy="217" r="5" fill="#2c2c3a"/>
-  <circle cx="220" cy="217" r="5" fill="#2c2c3a"/>
-  <path d="M200 195 Q195 180 185 170 Q190 160 200 150 Q210 160 215 170 Q205 180 200 195Z"
-        fill="#c0392b" opacity="0.8"/>
-  <path d="M155 245 Q200 265 245 245" fill="none" stroke="#2c2c3a" stroke-width="1.5"/>
-  <rect x="125" y="390" width="20" height="60" rx="3" fill="#2c2c3a" opacity="0.5"/>
-  <rect x="255" y="390" width="20" height="60" rx="3" fill="#2c2c3a" opacity="0.5"/>
-  <ellipse cx="135" cy="390" rx="16" ry="6" fill="#2c2c3a" opacity="0.4"/>
-  <ellipse cx="265" cy="390" rx="16" ry="6" fill="#2c2c3a" opacity="0.4"/>
-</svg>`,
+He looked at Senna. She had her sketchbook out and was drawing the stone as fast as she could, as if she didn't trust the morning to hold still.`
   },
   {
     n: 14,
@@ -859,31 +596,7 @@ He held the book out to Senna without a word.
 
 She looked at the pages. She looked at her hands. She looked out the window at the mountains receding behind them.
 
-"We need someone who can read this," she said.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g14" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#b0c4d8"/>
-      <stop offset="40%" stop-color="#d8e8d0"/>
-      <stop offset="100%" stop-color="#e8e0d0"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g14)"/>
-  <polygon points="0,320 100,180 200,320"   fill="#2c2c3a" opacity="0.5"/>
-  <polygon points="150,320 280,150 400,320" fill="#2c2c3a" opacity="0.45"/>
-  <polygon points="250,320 360,200 400,320" fill="#2c2c3a" opacity="0.35"/>
-  <path d="M180 500 Q185 420 195 360 Q200 310 210 260 Q215 210 220 160"
-        fill="none" stroke="#c8b890" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
-  <path d="M182 500 Q187 420 197 360 Q202 310 212 260 Q217 210 222 160"
-        fill="none" stroke="#a89870" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <rect x="155" y="370" width="12" height="35" rx="2" fill="#2c2c3a" opacity="0.6"/>
-  <rect x="153" y="362" width="16" height="10" rx="1" fill="#2c2c3a" opacity="0.5"/>
-  <circle cx="95"  cy="180" r="12" fill="#e8a060" opacity="0.7"/>
-  <circle cx="108" cy="172" r="9"  fill="#e8a060" opacity="0.6"/>
-  <circle cx="80"  cy="190" r="8"  fill="#e85050" opacity="0.5"/>
-  <circle cx="115" cy="185" r="7"  fill="#e8a060" opacity="0.55"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#2c2c3a" opacity="0.5" font-family="Georgia,serif" letter-spacing="3">中山道</text>
-</svg>`,
+"We need someone who can read this," she said.`
   },
   {
     n: 15,
@@ -915,22 +628,7 @@ Then it walked into the mist between the trees.
 
 "Did that just—" Torei began.
 
-"Yes," said Shizune.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#f0e8e0"/>
-  <defs>
-    <linearGradient id="g15" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f0e8e0"/>
-      <stop offset="100%" stop-color="#c8a890"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g15)"/>
-  <rect x="192" y="60" width="16" height="12" rx="2" fill="#c0392b" opacity="0.9"/><rect x="196" y="72" width="8" height="200" rx="2" fill="#c0392b" opacity="0.9"/><rect x="196" y="72" width="8" height="200" rx="2" fill="#c0392b" opacity="0.9"/><rect x="170" y="88" width="60" height="11" rx="2" fill="#c0392b" opacity="0.85"/><rect x="174" y="100" width="10" height="184" rx="2" fill="#c0392b" opacity="0.85"/><rect x="216" y="100" width="10" height="184" rx="2" fill="#c0392b" opacity="0.85"/><rect x="148" y="116" width="104" height="11" rx="2" fill="#c0392b" opacity="0.8"/><rect x="152" y="128" width="12" height="168" rx="2" fill="#c0392b" opacity="0.8"/><rect x="236" y="128" width="12" height="168" rx="2" fill="#c0392b" opacity="0.8"/><rect x="126" y="144" width="148" height="11" rx="2" fill="#c0392b" opacity="0.75"/><rect x="130" y="156" width="14" height="152" rx="2" fill="#c0392b" opacity="0.75"/><rect x="256" y="156" width="14" height="152" rx="2" fill="#c0392b" opacity="0.75"/><rect x="104" y="172" width="192" height="10" rx="2" fill="#c0392b" opacity="0.7"/><rect x="108" y="184" width="16" height="136" rx="2" fill="#c0392b" opacity="0.7"/><rect x="276" y="184" width="16" height="136" rx="2" fill="#c0392b" opacity="0.7"/><rect x="82" y="200" width="236" height="10" rx="2" fill="#c0392b" opacity="0.65"/><rect x="86" y="212" width="18" height="120" rx="2" fill="#c0392b" opacity="0.65"/><rect x="296" y="212" width="18" height="120" rx="2" fill="#c0392b" opacity="0.65"/><rect x="60" y="228" width="280" height="10" rx="2" fill="#c0392b" opacity="0.6"/><rect x="64" y="240" width="20" height="104" rx="2" fill="#c0392b" opacity="0.6"/><rect x="316" y="240" width="20" height="104" rx="2" fill="#c0392b" opacity="0.6"/>
-  <ellipse cx="200" cy="450" rx="8" ry="12" fill="#2c2c3a" opacity="0.5"/>
-  <ellipse cx="185" cy="462" rx="5" ry="8"  fill="#2c2c3a" opacity="0.35"/>
-  <path d="M192 450 Q200 440 208 450" fill="#2c2c3a" opacity="0.4"/>
-  <text x="200" y="490" text-anchor="middle" font-size="9" fill="#2c2c3a" opacity="0.5" font-family="Georgia,serif" letter-spacing="3">伏見稲荷</text>
-</svg>`,
+"Yes," said Shizune.`
   },
   {
     n: 16,
@@ -964,22 +662,7 @@ He laughed, quietly, to himself. Then he looked at the base of the bamboo stalk 
 
 Shizune translated them from her year of Japanese study, frowning.
 
-"You're close," she said.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g16" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d0e8c0"/>
-      <stop offset="100%" stop-color="#4a7a38"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g16)"/>
-  <rect x="20" y="0" width="14" height="500" rx="7" fill="#8BB870" opacity="0.7" stroke="#5a8a45" stroke-width="1"/><line x1="27" y1="80" x2="27" y2="82" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="66" y="0" width="16" height="500" rx="7" fill="#8BB870" opacity="0.7999999999999999" stroke="#5a8a45" stroke-width="1"/><line x1="73" y1="140" x2="73" y2="142" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="112" y="0" width="18" height="500" rx="7" fill="#8BB870" opacity="0.8999999999999999" stroke="#5a8a45" stroke-width="1"/><line x1="119" y1="200" x2="119" y2="202" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="158" y="0" width="14" height="500" rx="7" fill="#8BB870" opacity="0.7" stroke="#5a8a45" stroke-width="1"/><line x1="165" y1="260" x2="165" y2="262" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="204" y="0" width="16" height="500" rx="7" fill="#8BB870" opacity="0.7999999999999999" stroke="#5a8a45" stroke-width="1"/><line x1="211" y1="80" x2="211" y2="82" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="250" y="0" width="18" height="500" rx="7" fill="#8BB870" opacity="0.8999999999999999" stroke="#5a8a45" stroke-width="1"/><line x1="257" y1="140" x2="257" y2="142" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="296" y="0" width="14" height="500" rx="7" fill="#8BB870" opacity="0.7" stroke="#5a8a45" stroke-width="1"/><line x1="303" y1="200" x2="303" y2="202" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/><rect x="342" y="0" width="16" height="500" rx="7" fill="#8BB870" opacity="0.7999999999999999" stroke="#5a8a45" stroke-width="1"/><line x1="349" y1="260" x2="349" y2="262" stroke="#5a8a45" stroke-width="14+i%3*2" opacity="0.4"/>
-  <rect x="160" y="0" width="12" height="500" rx="6" fill="#6aaa50" opacity="0.5" transform="rotate(3,166,250)"/>
-  <polygon points="200,0 170,60 230,60" fill="#c8e8a8" opacity="0.3"/>
-  <polygon points="100,0 70,80 130,80"  fill="#c8e8a8" opacity="0.3"/>
-  <polygon points="300,0 270,80 330,80" fill="#c8e8a8" opacity="0.25"/>
-  <rect x="0" y="0" width="400" height="500" fill="#d0e8c0" opacity="0.08"/>
-</svg>`,
+"You're close," she said.`
   },
   {
     n: 17,
@@ -1009,33 +692,7 @@ It was a card. Heavy paper, cream, blank on one side. On the other, in ink appli
 
 Below it, an address.
 
-Senna looked up. The geiko had already turned the corner. The lane was empty.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g17" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3a2040"/>
-      <stop offset="100%" stop-color="#8a4a30"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g17)"/>
-  <rect x="0"   y="0" width="130" height="500" fill="#2a1820" opacity="0.9"/>
-  <rect x="270" y="0" width="130" height="500" fill="#2a1820" opacity="0.9"/>
-  <rect x="50"  y="80" width="60" height="180" rx="3" fill="#e8c860" opacity="0.25"/>
-  <rect x="55"  y="85" width="50" height="170" rx="2" fill="#e8c860" opacity="0.2"/>
-  <rect x="295" y="100" width="55" height="160" rx="3" fill="#e8c860" opacity="0.2"/>
-  <rect x="0"   y="480" width="400" height="20" fill="#1a1010" opacity="0.8"/>
-  <line x1="0" y1="480" x2="400" y2="480" stroke="#6a4a38" stroke-width="2"/>
-  <ellipse cx="193" cy="285" rx="14" ry="18" fill="#f0e0d0"/>
-  <rect x="183" y="300" width="28" height="160" rx="5" fill="#9b8bb5" opacity="0.9"/>
-  <path d="M183 330 Q175 350 170 380 Q178 370 183 380" fill="#9b8bb5" opacity="0.7"/>
-  <path d="M211 330 Q219 350 224 380 Q216 370 211 380" fill="#9b8bb5" opacity="0.7"/>
-  <ellipse cx="193" cy="275" rx="18" ry="22" fill="#f5e8d8"/>
-  <ellipse cx="193" cy="260" rx="20" ry="16" fill="#2c2c3a" opacity="0.85"/>
-  <line x1="183" y1="255" x2="178" y2="245" stroke="#e8c860" stroke-width="2"/>
-  <circle cx="176" cy="242" r="4" fill="#e8c860"/>
-  <circle cx="170" cy="248" r="3" fill="#c0392b" opacity="0.8"/>
-  <ellipse cx="340" cy="460" rx="20" ry="6" fill="#e8c860" opacity="0.3"/>
-</svg>`,
+Senna looked up. The geiko had already turned the corner. The lane was empty.`
   },
   {
     n: 18,
@@ -1073,21 +730,7 @@ Then he bowed and walked back the way he had come.
 
 Torei started to go after him. Daien caught his arm.
 
-"Don't," said Senna. She was staring at the garden. "He didn't mean here."`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#e8e4dc"/>
-  <path d="M0 180 Q100 175 200 180 Q300 185 400 180" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 198 Q100 193 200 198 Q300 203 400 198" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 216 Q100 211 200 216 Q300 221 400 216" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 234 Q100 229 200 234 Q300 239 400 234" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 252 Q100 247 200 252 Q300 257 400 252" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 270 Q100 265 200 270 Q300 275 400 270" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 288 Q100 283 200 288 Q300 293 400 288" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 306 Q100 301 200 306 Q300 311 400 306" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 324 Q100 319 200 324 Q300 329 400 324" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 342 Q100 337 200 342 Q300 347 400 342" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 360 Q100 355 200 360 Q300 365 400 360" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 378 Q100 373 200 378 Q300 383 400 378" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 396 Q100 391 200 396 Q300 401 400 396" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/><path d="M0 414 Q100 409 200 414 Q300 419 400 414" fill="none" stroke="#2c2c3a" stroke-width="0.8" opacity="0.25"/>
-  <ellipse cx="80"  cy="300" rx="28" ry="18" fill="#c8c0b8" stroke="#2c2c3a" stroke-width="1.2"/>
-  <ellipse cx="78"  cy="298" rx="22" ry="14" fill="#d8d0c8" opacity="0.6"/>
-  <ellipse cx="160" cy="240" rx="20" ry="14" fill="#c8c0b8" stroke="#2c2c3a" stroke-width="1.2"/>
-  <ellipse cx="230" cy="320" rx="32" ry="20" fill="#c0b8b0" stroke="#2c2c3a" stroke-width="1.2"/>
-  <ellipse cx="228" cy="318" rx="24" ry="15" fill="#d0c8c0" opacity="0.6"/>
-  <ellipse cx="310" cy="260" rx="18" ry="12" fill="#c8c0b8" stroke="#2c2c3a" stroke-width="1.2"/>
-  <ellipse cx="340" cy="340" rx="24" ry="16" fill="#c0b8b0" stroke="#2c2c3a" stroke-width="1.2"/>
-  <rect x="0"   y="440" width="400" height="60" fill="#8a7a60" opacity="0.6"/>
-  <rect x="0"   y="0"   width="400" height="60" fill="#7a6a50" opacity="0.5"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#e8e0d0" opacity="0.8" font-family="Georgia,serif" letter-spacing="3">龍安寺</text>
-</svg>`,
+"Don't," said Senna. She was staring at the garden. "He didn't mean here."`
   },
   {
     n: 19,
@@ -1113,21 +756,7 @@ Senna thought about this. It was either very profound or entirely silly, and she
 
 Back at the ryokan, there was a note under the door.
 
-An envelope, cream-coloured, heavy paper. Inside: an address, a time — tomorrow, eight in the morning — and at the bottom of the card, stamped in red ink, the symbol.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#2a1810"/>
-  <rect x="80"  y="0" width="240" height="500" fill="#3a2818" opacity="0.8"/>
-  <ellipse cx="120" cy="80" rx="12" ry="18" fill="#c0392b" opacity="0.8"/><line x1="120" y1="60" x2="120" y2="62" stroke="#8a6a40" stroke-width="1.5"/><ellipse cx="120" cy="98" rx="12" ry="5" fill="#c0392b" opacity="0.6"/><ellipse cx="160" cy="110" rx="12" ry="18" fill="#c0392b" opacity="0.8"/><line x1="160" y1="60" x2="160" y2="92" stroke="#8a6a40" stroke-width="1.5"/><ellipse cx="160" cy="128" rx="12" ry="5" fill="#c0392b" opacity="0.6"/><ellipse cx="200" cy="140" rx="12" ry="18" fill="#c0392b" opacity="0.8"/><line x1="200" y1="60" x2="200" y2="122" stroke="#8a6a40" stroke-width="1.5"/><ellipse cx="200" cy="158" rx="12" ry="5" fill="#c0392b" opacity="0.6"/><ellipse cx="240" cy="80" rx="12" ry="18" fill="#c0392b" opacity="0.8"/><line x1="240" y1="60" x2="240" y2="62" stroke="#8a6a40" stroke-width="1.5"/><ellipse cx="240" cy="98" rx="12" ry="5" fill="#c0392b" opacity="0.6"/><ellipse cx="280" cy="110" rx="12" ry="18" fill="#c0392b" opacity="0.8"/><line x1="280" y1="60" x2="280" y2="92" stroke="#8a6a40" stroke-width="1.5"/><ellipse cx="280" cy="128" rx="12" ry="5" fill="#c0392b" opacity="0.6"/>
-  <line x1="80"  y1="0" x2="80"  y2="500" stroke="#6a5a40" stroke-width="3"/>
-  <line x1="320" y1="0" x2="320" y2="500" stroke="#6a5a40" stroke-width="3"/>
-  <rect x="85"  y="160" width="70" height="100" rx="3" fill="#6a4a28" opacity="0.8"/>
-  <rect x="245" y="180" width="65" height="90"  rx="3" fill="#5a4a28" opacity="0.8"/>
-  <rect x="100" y="170" width="50" height="40" rx="2" fill="#e8c060" opacity="0.25"/>
-  <rect x="258" y="190" width="45" height="35" rx="2" fill="#e8c060" opacity="0.2"/>
-  <path d="M80 500 Q120 430 160 480 Q200 430 240 480 Q280 430 320 480 L320 500Z"
-        fill="#4a3828" opacity="0.7"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#e8c880" opacity="0.6" font-family="Georgia,serif" letter-spacing="3">錦市場</text>
-</svg>`,
+An envelope, cream-coloured, heavy paper. Inside: an address, a time — tomorrow, eight in the morning — and at the bottom of the card, stamped in red ink, the symbol.`
   },
   {
     n: 20,
@@ -1163,29 +792,7 @@ A silence.
 
 "What does it open?" Senna asked.
 
-The old woman smiled, very slightly, and began collecting the tea bowls.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g20" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#e8e4d8"/>
-      <stop offset="100%" stop-color="#d0c8b8"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g20)"/>
-  <line x1="0" y1="320" x2="400" y2="320" stroke="#b0a890" stroke-width="1" opacity="0.5"/>
-  <line x1="0" y1="340" x2="400" y2="340" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="360" x2="400" y2="360" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="380" x2="400" y2="380" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="400" x2="400" y2="400" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="420" x2="400" y2="420" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="440" x2="400" y2="440" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="460" x2="400" y2="460" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="0" y1="480" x2="400" y2="480" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/>
-  <line x1="0" y1="320" x2="0" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="20" y1="320" x2="20" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="40" y1="320" x2="40" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="60" y1="320" x2="60" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="80" y1="320" x2="80" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="100" y1="320" x2="100" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="120" y1="320" x2="120" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="140" y1="320" x2="140" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="160" y1="320" x2="160" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="180" y1="320" x2="180" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="200" y1="320" x2="200" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="220" y1="320" x2="220" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="240" y1="320" x2="240" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="260" y1="320" x2="260" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="280" y1="320" x2="280" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="300" y1="320" x2="300" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="320" y1="320" x2="320" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="340" y1="320" x2="340" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="360" y1="320" x2="360" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/><line x1="380" y1="320" x2="380" y2="500" stroke="#b0a890" stroke-width="0.8" opacity="0.3"/>
-  <ellipse cx="170" cy="290" rx="80" ry="30" fill="#5a3a20" opacity="0.4"/>
-  <path d="M100 260 Q100 340 170 350 Q240 340 240 260 Q240 220 170 215 Q100 220 100 260Z"
-        fill="#6a4a28" stroke="#4a2a10" stroke-width="2"/>
-  <ellipse cx="170" cy="260" rx="70" ry="28" fill="#3a8a3a" opacity="0.85"/>
-  <ellipse cx="170" cy="258" rx="60" ry="22" fill="#4aaa4a" opacity="0.5"/>
-  <ellipse cx="170" cy="256" rx="45" ry="16" fill="#6acc6a" opacity="0.3"/>
-  <line x1="280" y1="160" x2="270" y2="310" stroke="#8a6a40" stroke-width="3" stroke-linecap="round"/>
-  <line x1="270" y1="175" x2="260" y2="185" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="187" x2="258" y2="199" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="199" x2="256" y2="213" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="211" x2="254" y2="227" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="223" x2="252" y2="241" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="235" x2="250" y2="255" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="247" x2="248" y2="269" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="259" x2="246" y2="283" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="271" x2="244" y2="297" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/><line x1="270" y1="283" x2="242" y2="311" stroke="#8a6a40" stroke-width="1.2" opacity="0.7"/>
-  <ellipse cx="270" cy="310" rx="15" ry="6" fill="#8a6a40" opacity="0.5"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#2c2c3a" opacity="0.5" font-family="Georgia,serif" letter-spacing="3">茶道</text>
-</svg>`,
+The old woman smiled, very slightly, and began collecting the tea bowls.`
   },
   {
     n: 21,
@@ -1217,29 +824,7 @@ It had not been there before. He was certain of this. He had looked at every pag
 
 A hand-drawn map. Osaka. Streets marked with careful lines. And at the edge of the page, a small red mark: the symbol.
 
-He traced the route with his finger.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#0a0818"/>
-  <rect x="0" y="250" width="400" height="250" fill="#0e1020" opacity="0.9"/>
-  <rect x="0" y="248" width="400" height="6" fill="#1a1030" opacity="0.7"/>
-  <rect x="0"   y="80" width="60"  height="170" fill="#1a0a10"/>
-  <rect x="70"  y="60" width="80"  height="190" fill="#100818"/>
-  <rect x="160" y="70" width="90"  height="180" fill="#0a1020"/>
-  <rect x="260" y="50" width="70"  height="200" fill="#180810"/>
-  <rect x="340" y="90" width="60"  height="160" fill="#100a18"/>
-  <rect x="10"  y="100" width="40" height="20" rx="2" fill="#e84040" opacity="0.9"/>
-  <rect x="75"  y="80"  width="70" height="25" rx="2" fill="#e8e040" opacity="0.85"/>
-  <rect x="165" y="90"  width="80" height="22" rx="2" fill="#40a0e8" opacity="0.8"/>
-  <rect x="265" y="70"  width="60" height="25" rx="2" fill="#e87840" opacity="0.85"/>
-  <rect x="345" y="110" width="50" height="18" rx="2" fill="#40e878" opacity="0.8"/>
-  <rect x="10"  y="340" width="40" height="100" fill="#e84040" opacity="0.25"/>
-  <rect x="75"  y="330" width="70" height="120" fill="#e8e040" opacity="0.2"/>
-  <rect x="165" y="335" width="80" height="115" fill="#40a0e8" opacity="0.18"/>
-  <rect x="265" y="325" width="60" height="125" fill="#e87840" opacity="0.22"/>
-  <rect x="345" y="340" width="50" height="110" fill="#40e878" opacity="0.2"/>
-  <path d="M0 255 Q100 253 200 256 Q300 259 400 255" fill="none" stroke="white" stroke-width="0.5" opacity="0.06"/><path d="M0 259 Q100 257 200 260 Q300 263 400 259" fill="none" stroke="white" stroke-width="0.5" opacity="0.055"/><path d="M0 263 Q100 261 200 264 Q300 267 400 263" fill="none" stroke="white" stroke-width="0.5" opacity="0.049999999999999996"/><path d="M0 267 Q100 265 200 268 Q300 271 400 267" fill="none" stroke="white" stroke-width="0.5" opacity="0.045"/><path d="M0 271 Q100 269 200 272 Q300 275 400 271" fill="none" stroke="white" stroke-width="0.5" opacity="0.039999999999999994"/><path d="M0 275 Q100 273 200 276 Q300 279 400 275" fill="none" stroke="white" stroke-width="0.5" opacity="0.034999999999999996"/><path d="M0 279 Q100 277 200 280 Q300 283 400 279" fill="none" stroke="white" stroke-width="0.5" opacity="0.03"/><path d="M0 283 Q100 281 200 284 Q300 287 400 283" fill="none" stroke="white" stroke-width="0.5" opacity="0.024999999999999994"/>
-  <text x="200" y="490" text-anchor="middle" font-size="9" fill="#e8c860" opacity="0.6" font-family="Georgia,serif" letter-spacing="3">道頓堀</text>
-</svg>`,
+He traced the route with his finger.`
   },
   {
     n: 22,
@@ -1273,35 +858,7 @@ The four stones matched the four cities. The symbol was not a mark. It was a map
 
 He showed her the page. At the edge of the map, the route continued — off the castle grounds, through a warren of backstreets, to a small mark.
 
-A shrine that appeared on no modern map they had.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g22" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a2a4a"/>
-      <stop offset="60%" stop-color="#2a4a6a"/>
-      <stop offset="100%" stop-color="#3a5a48"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g22)"/>
-  <rect x="140" y="380" width="120" height="80" fill="#4a3828" opacity="0.9"/>
-  <rect x="150" y="340" width="100" height="50" fill="#5a4838"/>
-  <rect x="160" y="310" width="80"  height="40" fill="#4a3828"/>
-  <rect x="155" y="280" width="90"  height="38" fill="#e8e4d8" stroke="#c8a84b" stroke-width="1.5"/>
-  <rect x="165" y="255" width="70"  height="32" fill="#e8e4d8" stroke="#c8a84b" stroke-width="1.5"/>
-  <rect x="172" y="232" width="56"  height="28" fill="#e8e4d8" stroke="#c8a84b" stroke-width="1.5"/>
-  <rect x="178" y="210" width="44"  height="26" fill="#e8e4d8" stroke="#c8a84b" stroke-width="1.5"/>
-  <polygon points="200,175 178,210 222,210" fill="#4a3828"/>
-  <polygon points="200,175 185,190 215,190" fill="#e8e4d8" opacity="0.6"/>
-  <line x1="155" y1="280" x2="245" y2="280" stroke="#c8a84b" stroke-width="2"/>
-  <line x1="165" y1="255" x2="235" y2="255" stroke="#c8a84b" stroke-width="1.5"/>
-  <line x1="172" y1="232" x2="228" y2="232" stroke="#c8a84b" stroke-width="1.5"/>
-  <line x1="178" y1="210" x2="222" y2="210" stroke="#c8a84b" stroke-width="1.5"/>
-  <ellipse cx="200" cy="480" rx="120" ry="10" fill="#1a2a1a" opacity="0.5"/>
-  <circle cx="320" cy="120" r="2" fill="white" opacity="0.7"/>
-  <circle cx="80"  cy="80"  r="1.5" fill="white" opacity="0.6"/>
-  <circle cx="340" cy="60"  r="1"   fill="white" opacity="0.5"/>
-  <circle cx="60"  cy="140" r="1.5" fill="white" opacity="0.55"/>
-</svg>`,
+A shrine that appeared on no modern map they had.`
   },
   {
     n: 23,
@@ -1329,24 +886,7 @@ Senna opened it.
 
 It said: *The shrine opens at sunrise. Go alone.*
 
-She looked up. The bartender was cleaning a glass at the far end of the bar, and did not look at her, and somehow she understood that he had not written it, and had not read it, and had simply placed it there when it had appeared.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <rect width="400" height="500" fill="#0d0808"/>
-  <rect x="0" y="320" width="400" height="180" fill="#1a0f08" opacity="0.95"/>
-  <rect x="0" y="315" width="400" height="12" fill="#3a2818"/>
-  <rect x="0" y="315" width="400" height="4"  fill="#6a4a28" opacity="0.7"/>
-  <circle cx="200" cy="160" r="45" fill="#c8a84b" opacity="0.15"/>
-  <circle cx="200" cy="160" r="25" fill="#c8a84b" opacity="0.25"/>
-  <circle cx="200" cy="160" r="12" fill="#c8a84b" opacity="0.7"/>
-  <ellipse cx="200" cy="168" rx="16" ry="8" fill="#c8a84b" opacity="0.4"/>
-  <line x1="200" y1="60" x2="200" y2="148" stroke="#8a6a40" stroke-width="2"/>
-  <ellipse cx="200" cy="55" rx="10" ry="5" fill="#6a5030"/>
-  <rect x="80" y="200" width="18" height="60" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="89" cy="198" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="110" y="220" width="18" height="80" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="119" cy="218" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="140" y="240" width="18" height="60" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="149" cy="238" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="170" y="200" width="18" height="80" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="179" cy="198" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="200" y="220" width="18" height="60" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="209" cy="218" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="230" y="240" width="18" height="80" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="239" cy="238" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="260" y="200" width="18" height="60" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="269" cy="198" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/><rect x="290" y="220" width="18" height="80" rx="5" fill="#2a1a10" stroke="#4a3020" stroke-width="1"/><ellipse cx="299" cy="218" rx="9" ry="4" fill="#3a2a18" stroke="#4a3020" stroke-width="0.8"/>
-  <rect x="0" y="200" width="400" height="115" fill="#0d0808" opacity="0.5"/>
-  <path d="M0 315 Q100 310 200 315 Q300 320 400 315" fill="none" stroke="#c8a84b" stroke-width="1" opacity="0.4"/>
-  <rect x="100" y="340" width="200" height="60" rx="3" fill="#1a1008" opacity="0.7"/>
-  <text x="200" y="475" text-anchor="middle" font-size="9" fill="#c8a84b" opacity="0.5" font-family="Georgia,serif" letter-spacing="3">おもてなし</text>
-</svg>`,
+She looked up. The bartender was cleaning a glass at the far end of the bar, and did not look at her, and somehow she understood that he had not written it, and had not read it, and had simply placed it there when it had appeared.`
   },
   {
     n: 24,
@@ -1384,37 +924,7 @@ She looked back at the three of them.
 
 "Ready?" she said.
 
-She was already walking.`,
-    svg: `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#f5f0e8"/>
-  <defs>
-    <linearGradient id="g24" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f0d8c8"/>
-      <stop offset="50%" stop-color="#f8ece0"/>
-      <stop offset="100%" stop-color="#e8e0d8"/>
-    </linearGradient>
-  </defs>
-  <rect width="400" height="500" fill="url(#g24)"/>
-  <path d="M0 400 Q100 380 200 395 Q300 410 400 390 L400 500 L0 500Z" fill="#d0c8b8" opacity="0.5"/>
-  <ellipse cx="155" cy="310" rx="30" ry="20" fill="#b8a890" stroke="#2c2c3a" stroke-width="1.5" opacity="0.9"/>
-  <ellipse cx="153" cy="308" rx="24" ry="16" fill="#c8b8a0" opacity="0.5"/>
-  <ellipse cx="245" cy="320" rx="32" ry="22" fill="#b0a088" stroke="#2c2c3a" stroke-width="1.5" opacity="0.9"/>
-  <ellipse cx="243" cy="318" rx="26" ry="17" fill="#c0b098" opacity="0.5"/>
-  <ellipse cx="160" cy="375" rx="28" ry="19" fill="#b8a890" stroke="#2c2c3a" stroke-width="1.5" opacity="0.9"/>
-  <ellipse cx="158" cy="373" rx="22" ry="15" fill="#c8b8a0" opacity="0.5"/>
-  <ellipse cx="242" cy="368" rx="30" ry="21" fill="#b0a088" stroke="#2c2c3a" stroke-width="1.5" opacity="0.9"/>
-  <ellipse cx="240" cy="366" rx="24" ry="16" fill="#c0b098" opacity="0.5"/>
-  <path d="M155 310 L160 375" stroke="#2c2c3a" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.3"/>
-  <path d="M245 320 L242 368" stroke="#2c2c3a" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.3"/>
-  <path d="M155 310 L245 320" stroke="#2c2c3a" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.3"/>
-  <path d="M160 375 L242 368" stroke="#2c2c3a" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.3"/>
-  <circle cx="290" cy="220" r="40" fill="#c8a84b" opacity="0.2"/>
-  <circle cx="290" cy="220" r="25" fill="#c8a84b" opacity="0.15"/>
-  <path d="M262 198 Q270 185 280 192 Q285 178 295 185 Q302 175 310 185" fill="none" stroke="#c17f5e" stroke-width="1" opacity="0.4"/>
-  <circle cx="198" cy="150" r="2.5" fill="#c0392b" opacity="0.5"/>
-  <circle cx="210" cy="155" r="3"   fill="#c0392b" opacity="0.45"/>
-  <circle cx="190" cy="165" r="2"   fill="#c0392b" opacity="0.4"/>
-  <text x="200" y="475" text-anchor="middle" font-size="10" fill="#2c2c3a" opacity="0.45" font-family="Georgia,serif" letter-spacing="5">物の哀れ</text>
-</svg>`,
+She was already walking.`
   },
 ];
 
@@ -1445,8 +955,11 @@ function toHTML(text) {
 }
 
 function show(ch) {
+  const imgSrc = `images/Chapter${ch.n}.png`;
   document.getElementById('grid').innerHTML = `
-    <div class="illus">${ch.svg}</div>
+    <img class="chap-img" src="${imgSrc}"
+         alt="Chapter ${ch.n} illustration"
+         onerror="this.src='images/placeholder.png'">
     <div class="chap">
       <div class="chap-head">
         <div class="chap-n">Chapter ${ch.n} of 24</div>
